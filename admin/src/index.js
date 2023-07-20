@@ -28,19 +28,19 @@ export default {
             sectionTitle: null,
             items: [
               {
-                name: 'extra-options',
+                name: 'options-extra',
                 type: 'textarea-enum',
                 intlLabel: {
-                  id: getTrad('multi-country-select.extra-options.label'),
+                  id: getTrad('multi-country-select.options-extra.label'),
                   defaultMessage: 'Add more options to the select menu',
                 },
                 description: {
-                  id: getTrad('multi-country-select.extra-options.description'),
+                  id: getTrad('multi-country-select.options-extra.description'),
                   defaultMessage:
                     'One option per line, in the format value:label',
                 },
                 placeholder: {
-                  id: getTrad('multi-country-select.extra-options.placeholder'),
+                  id: getTrad('multi-country-select.options-extra.placeholder'),
                   defaultMessage: 'Ex:\nMN:MOON\nMRS:MARS\nNEP:NEPTUNE',
                 },
               },
@@ -65,6 +65,19 @@ export default {
                   id: 'form.attribute.item.requiredField.description',
                   defaultMessage:
                     "You won't be able to create an entry if this field is empty",
+                },
+              },
+              {
+                name: 'private',
+                type: 'checkbox',
+                intlLabel: {
+                  id: 'form.attribute.item.private',
+                  defaultMessage: 'Private field',
+                },
+                description: {
+                  id: 'form.attribute.item.private.description',
+                  defaultMessage:
+                    'This field will not show up in the API response',
                 },
               },
             ],
